@@ -4,8 +4,11 @@
 #  length = 10
 #}
 
-#Terraform resource block template:
-# Template - create new EC2/S3/Whatever TEMPLATE
+#Terraform Resource Block template:
+
+#REMINDER !
+#Terraform Resource Block is used to manage ANY infrastructure (EC2/S3_Bucket/Whatever) we want to debloy on AWS.
+
 # <BLOCK TYPE> "<BLOCK LABEL>" "<BLOCK LABEL>" {
  # Block body
 # <IDENTIFIER> = <EXPRESSION> # Argument
