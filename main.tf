@@ -9,7 +9,7 @@
 #REMINDER !
 #Terraform Resource Block is used to manage ANY infrastructure (EC2/S3_Bucket/Whatever) we want to debloy on AWS.
 
-# <BLOCK TYPE> "<BLOCK LABEL>" "<BLOCK LABEL>" {
+# resource <BLOCK TYPE> "<BLOCK LABEL>" "<BLOCK LABEL>" {
  # Block body
 # <IDENTIFIER> = <EXPRESSION> # Argument
 # }
@@ -37,18 +37,25 @@ resource "aws_instance" "web" {
     }
 }
 
+# resource "aws_s3_bucket" "my-new-S3-bucket" {
+#  bucket = "my-new-Test-bucket-Marek"
+#   tags = {
+#     Name    = "My S3 Bucket"
+#     Purpose = "Intro to Resource Blocks Lab"
+#	}
+# }
+
+
+
+# resource "aws_s3_bucket_acl" "my-new-acl-bucket" {
+#  bucket = "aws_s3_bucket.my-new-S3-bucket.id"
+#  acl    = "private"
+# }
 
 
 
 
-
-
-
-
-
-
-
-
+#TRASH:
 #resource "aws_s3_bucket" "my_new_S3_bucket" {
 #    bucket = "my-new-tf-test-bucket-marek"
 #    acl    = "private"
