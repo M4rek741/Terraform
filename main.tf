@@ -19,10 +19,10 @@
 
 #Configure the AWS Provider
 provider "aws" {
-   access_key = "_NULL_"
-   secret_key = "_NULL_"
+ #  access_key = "_NULL_"
+ #  secret_key = "_NULL_"
    region = "us-east-1"
-   shared_credentials_file = "/root/TERRAFORM/.aws/creds"
+   shared_credentials_files = ["/root/TERRAFORM/.aws/credentials"]
  }
 
 resource "aws_instance" "web" {
