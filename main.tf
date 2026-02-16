@@ -58,25 +58,13 @@ resource "aws_route_table" "public_route_table" {
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-# resource "aws_s3_bucket" "my-new-S3-bucket" {
-#  bucket = "my-new-Test-bucket-Marek"
-#   tags = {
-#     Name    = "My S3 Bucket"
-#     Purpose = "Intro to Resource Blocks Lab"
-#	}
-# }
+ resource "aws_s3_bucket" "my-new-S3-bucket" {
+  bucket = "my-new-Test-bucket-Marek"
+   tags = {
+     Name    = "My S3 Bucket"
+     Purpose = "Intro to Resource Blocks Lab"
+	}
+}
 
 
 
