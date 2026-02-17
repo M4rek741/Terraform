@@ -14,6 +14,16 @@
 # <IDENTIFIER> = <EXPRESSION> # Argument
 # }
 
+#Input Variable template:
+#variable "<VARIABLE_NAME>" {
+# #Block body
+# type = <VARIABLE TYPE>
+# description = <DESCRIPTION>
+# default = <EXPRESSION>
+# sensitive = <BOOLEAN>
+# validation = <RULES>
+#}
+
 
 #WORKING CODE:
 
