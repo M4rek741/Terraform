@@ -51,7 +51,15 @@ resource "aws_instance" "web" {
 # Add a new resource - "VPC"
 resource "aws_vpc" "vpc" {
    cidr_block = "10.0.0.0/16"
+
+   tags = {
+     Name = var.vpc_name
+     Terraform = "true"
+     Region = data.aws_region.current
+   }
 }
+
+data "aws_region" "current" {}
 
 # Add a new resource - "Internet gateway"
 resource "aws_internet_gateway" "internet_gateway" {
